@@ -1,0 +1,75 @@
+<html lang="pl">  
+	<head>  
+		<meta http-equiv="Content-Type" content="text/html" charset="utf-8" /> 
+		<meta name="Description" content="Modele barw" />  
+		<link rel="Stylesheet" type="text/css" href="style.css" />
+		<title>Strona</title>  
+		<script type="text/javascript"src="jquery-2.2.0.min.js"></script>
+	</head>  
+<body link="#000000" vlink="#000000" alink="#000000"> 
+	<div id="gora"><div id = "napis2">Formaty plików dzwiękowych</div></div>
+	<div id="lewa">	
+	
+	<div id="p2">MENU</div>
+	<div id="p1"> 
+<br/>
+	</style>
+    <script>
+	
+	var i=true;
+			$(document).ready(
+	function(){
+			$("#p2").click(
+	function(){
+		if(i)
+			{$("#p1").slideDown("slow");
+				i=false;}
+		else
+			{$("#p1").slideUp("slow");
+				i=true;}
+	}
+	);
+	}
+	)
+		    </script>
+				<center>
+				<a href="cd.html">CD-Audio</a><br/><br/>
+				<a href="midi.html">MIDI</a><br/><br/>	
+				<a href="wav.html">WAV</a><br/><br/>	
+				<a href="mp3.html">MP3</a><br/><br/>
+				<a href="mp3pro.html">MP3 PRO</a><br/><br/>
+				<a href="mp4.html">MP4</a><br/><br/>
+				<a href="ogg.html">OGG</a><br/><br/>	
+				<a href="qt.html">Quick Time Audio</a><br/><br/>	
+				<a href="real.html">Real Audio</a><br/><br/>
+				<a href="wma.html">WMA</a><br/><br/>
+				<a href="audio.html">Audacity cwiczenia </a><br/><br/>
+				</center>
+		</div>
+		</div>
+		<div id="prawa"><div id ="napis3">
+<h1><center>MP3</center></h1><center>	
+<button><b><font color = "white">Opis</b></button></font>
+<button><b><font color = "white">Obrazek</b></button></font></center>
+<p><b><font color = "white"><font size = "5">Format wykorzystujący standard kompresji MPEG-1 Audio Layer 3.
+Grupa Motion Picture Expert Group przy współpracy z Instytutem Frauenhofera z niemieckiego Erlangen, stworzyła algorytm kompresji i zapisu plików multimedialnych, ze szczególnym naciskiem na obraz (format MPEG). Jednak format ten można było wykorzystać również do zapisu audio i tak powstał format MP3. Największą zaletą tego zapisu jest możliwość skompresowania pliku typu WAV do MP3 nawet 12,13-krotnie, czyli dużo bardziej niż przy pomocy popularnych algorytmów kompresujących (ZIP, RAR, ARJ).
+Jakość bliska CD wymaga strumienia 128 Kbitów/sek, około 1 MB/minutę, spotykane zakresy od kilkunastu Kb/s (mowa, wiadomości strumieniowo, monofonicznie) do 320 Kb/s (wysoka jakość), stereofoniczne. Kodowanie VBR (Variable Bit Rate) daje nieco lepszą jakość przy tej samej wielkości plików.
+Na popularność MP3 wpływa przede wszystkim wysoki stopień kompresji danych dźwiękowych, dzięki czemu pliki w tym formacie mają stosunkowo niewielkie rozmiary przy jednoczesnej wysokiej jakości brzmienia.
+Pliki MP3 można odtwarzać przy pomocy różnych programów komputerowych (na przykład Winampa dla systemów Microsoft Windows, Macamp dla Macintosha, XMMS dla systemów uniksowych), natomiast do ich tworzenia służy na przykład program MP3 Compressor. Niektóre discmany potrafią odtwarzać płyty CD-R i CD-RW zawierające pliki MP3.<br/></b></font></font>
+<p><img src="obrazki/mp3.png" style='border-radius:10px;' width=250px height=250px ></p></div>
+<div id="log"></div>
+ 
+<script>
+$( "button:first" ).click(function() {
+  $( "p:first" ).fadeToggle( "slow", "linear" );
+});
+$( "button:last" ).click(function() {
+  $( "p:last" ).fadeToggle( "slow", function() {
+    $( "#log" ).append( "<div>finished</div>" );
+  });
+});
+</script>
+</div>
+		</div>
+		</body>
+		</html>

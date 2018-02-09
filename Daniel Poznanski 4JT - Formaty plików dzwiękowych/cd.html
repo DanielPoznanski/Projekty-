@@ -1,0 +1,76 @@
+<html lang="pl">  
+	<head>  
+		<meta http-equiv="Content-Type" content="text/html" charset="utf-8" /> 
+		<meta name="Description" content="Modele barw" />  
+		<link rel="Stylesheet" type="text/css" href="style.css" />
+		<title>Strona</title>  
+		<script type="text/javascript"src="jquery-2.2.0.min.js"></script>
+	</head>  
+<body link="#000000" vlink="#000000" alink="#000000"> 
+	<div id="gora"><div id = "napis2">Formaty plików dzwiękowych</div></div>
+	<div id="lewa">	
+	
+	<div id="p2">MENU</div>
+	<div id="p1"> 
+<br/>
+	</style>
+    <script>
+	
+	var i=true;
+			$(document).ready(
+	function(){
+			$("#p2").click(
+	function(){
+		if(i)
+			{$("#p1").slideDown("slow");
+				i=false;}
+		else
+			{$("#p1").slideUp("slow");
+				i=true;}
+	}
+	);
+	}
+	)
+		    </script>
+				<center>
+				<a href="cd.html">CD-Audio</a><br/><br/>
+				<a href="midi.html">MIDI</a><br/><br/>	
+				<a href="wav.html">WAV</a><br/><br/>	
+				<a href="mp3.html">MP3</a><br/><br/>
+				<a href="mp3pro.html">MP3 PRO</a><br/><br/>
+				<a href="mp4.html">MP4</a><br/><br/>
+				<a href="ogg.html">OGG</a><br/><br/>	
+				<a href="qt.html">Quick Time Audio</a><br/><br/>	
+				<a href="real.html">Real Audio</a><br/><br/>
+				<a href="wma.html">WMA</a><br/><br/>
+				<a href="audio.html">Audacity cwiczenia </a><br/><br/>
+				</center>
+		</div>
+		</div>
+		<div id="prawa"><div id ="napis3">
+<h1><center>CD-Audio</center></h1><center>	
+<button><b><font color = "white">Opis</b></button></font>
+<button><b><font color = "white">Obrazek</b></button></font></center>
+<p><b><font color = "white"><font size = "5">CD-Audio, Audio-CD, CD-DA (ang. Compact Disc Digital Audio) – standard cyfrowego zapisu dźwięku na płycie kompaktowej, wykorzystujący do tego celu kodowanie PCM o częstotliwości próbkowania 44,1 kHz i rozdzielczości 16 bitów na próbkę.
+Płyta CD pozwala na zapis dwóch kanałów (stereo). Muzyka jest podzielona na ścieżki, po których można przeskakiwać bez konieczności przewijania. Jeśli płyta została zapisana w systemie Track-At-Once (TAO) między ścieżkami będzie 2-sekundowa przerwa, można to ominąć nagrywając płytę w systemie Disc-At-Once (DAO).
+
+Dane zapisywane na dysku CD-Audio poddawane są kodowaniu CIRC, służącemu do korekcji błędów, a następnie kodowaniu kanałowemu EFM, zwiększającemu upakowanie danych.
+
+CD-DA zawiera standardowo 74 minuty nagrania podzielonego na maksymalnie 99 części. Przy największym dopuszczalnym zwężeniu rowka (1,497 μm) długość nagrania można zwiększyć do 79 minut i 40 sekund (przy przekroczeniu standardów - nawet do 90 albo 99 minut, przy czym takie płyty powodują dużo problemów z odczytem, szczególnie w starszych odtwarzaczach).<br/></b></font>
+<p><img src="obrazki/cd.png" style='border-radius:10px;' width=400px height=300px ></p></div>
+</font><div id="log"></div>
+ 
+<script>
+$( "button:first" ).click(function() {
+  $( "p:first" ).fadeToggle( "slow", "linear" );
+});
+$( "button:last" ).click(function() {
+  $( "p:last" ).fadeToggle( "slow", function() {
+    $( "#log" ).append( "<div>finished</div>" );
+  });
+});
+</script>
+</div>
+		</div>
+		</body>
+		</html>

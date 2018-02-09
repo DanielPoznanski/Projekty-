@@ -1,0 +1,75 @@
+<html lang="pl">  
+	<head>  
+		<meta http-equiv="Content-Type" content="text/html" charset="utf-8" /> 
+		<meta name="Description" content="Modele barw" />  
+		<link rel="Stylesheet" type="text/css" href="style.css" />
+		<title>Strona</title>  
+		<script type="text/javascript"src="jquery-2.2.0.min.js"></script>
+	</head>  
+<body link="#000000" vlink="#000000" alink="#000000"> 
+	<div id="gora"><div id = "napis2">Formaty plików dzwiękowych</div></div>
+	<div id="lewa">	
+	
+	<div id="p2">MENU</div>
+	<div id="p1"> 
+<br/>
+	</style>
+    <script>
+	
+	var i=true;
+			$(document).ready(
+	function(){
+			$("#p2").click(
+	function(){
+		if(i)
+			{$("#p1").slideDown("slow");
+				i=false;}
+		else
+			{$("#p1").slideUp("slow");
+				i=true;}
+	}
+	);
+	}
+	)
+		    </script>
+				<center>
+				<a href="cd.html">CD-Audio</a><br/><br/>
+				<a href="midi.html">MIDI</a><br/><br/>	
+				<a href="wav.html">WAV</a><br/><br/>	
+				<a href="mp3.html">MP3</a><br/><br/>
+				<a href="mp3pro.html">MP3 PRO</a><br/><br/>
+				<a href="mp4.html">MP4</a><br/><br/>
+				<a href="ogg.html">OGG</a><br/><br/>	
+				<a href="qt.html">Quick Time Audio</a><br/><br/>	
+				<a href="real.html">Real Audio</a><br/><br/>
+				<a href="wma.html">WMA</a><br/><br/>
+				<a href="audio.html">Audacity cwiczenia </a><br/><br/>
+				</center>
+		</div>
+		</div>
+		<div id="prawa"><div id ="napis3">
+<h1><center>MP4</center></h1><center>	
+<button><b><font color = "white">Opis</b></button></font>
+<button><b><font color = "white">Obrazek</b></button></font></center>
+<p><b><font color = "white"><font size = "5">Kodek o nazwie MP4 to swego rodzaju oszustwo (tak zwane zatargi o prawa autorskie). Format ten oparty jest na technologii MPEG-4 i standardzie AAC, lecz stanowi zastrzeżone rozwiązanie firmowe. Twórca formatu MP4, firma Global Music One, zdecydował się nazwać swoje dzieło w taki sposób licząc zapewne na "podczepienie się" pod ewentualny sukces formatu MPEG-4.
+
+Format zapewniający wysoką jakość i dobrą kompresję. Każdy plik MP4 zawiera w sobie odtwarzacz, więc użytkownik nie musi posiadać programu obsługującego ten format. Pliki MP4 ?opakowane w format DAP (Digital Audio Postcard, czyli cyfrowa pocztówka dźwiękowa) mogą być rozprowadzane za darmo przez właściciela praw autorskich i przekazywane dalej przez użytkowników.
+Pliki takie mogą zawierać łącza do witryn internetowych udostępniających dodatkowe informacje lub umożliwiających zakup albumu. Pomimo swoich zalet, format DAP nie rozpowszechnia się zbyt szybko. Firma Global Music, wraz z kilkoma wytwórniami, które do niej dołączyły, regularnie publikuje nowe utwory w formacie MP4, jednak działalność ta ma stosunkowo ograniczony zakres, a liczba dostępnych utworów MP4 jest praktycznie niezauważalna w stosunku do liczby legalnych i nielegalnych plików w formacie MP3 i innych.
+Wielu uważa, że Global Music, poprzez zawłaszczenie nazwy nowo powstającego, otwartego standardu, postąpiła nieuczciwie. W ten sposób naraziła się na krytykę ze strony użytkowników innych formatów. Otwarte standardy, takie jak MPEG-4, zapewniają w pewnej mierze możliwość przenośności i współpracy różnych rozwiązań, zaś standardy zamknięte mają za zadanie jedynie opanować fragment rynku, przynosząc zysk pojedynczej firmie. Udostępnione w Internecie zamknięte rozwiązanie nie cieszą się więc wielkim zainteresowaniem. Poza tym, Global Music jak na razie woli współpracować bezpośrednio z wytwórniami i dotychczas nie udostępniła wersji kodera przeznaczonej dla zwykłych użytkowników. Powyższe cechy formatu MP4 przesądzają o jego przegranej w rywalizacji z MP3.<br/></b></font>
+</font><p><img src="obrazki/mp4.png" style='border-radius:10px;' width=250px height=250px ></p></div>
+<div id="log"></div>
+ 
+<script>
+$( "button:first" ).click(function() {
+  $( "p:first" ).fadeToggle( "slow", "linear" );
+});
+$( "button:last" ).click(function() {
+  $( "p:last" ).fadeToggle( "slow", function() {
+    $( "#log" ).append( "<div>finished</div>" );
+  });
+});
+</script>
+</div>
+		</div>
+		</body>
+		</html>
